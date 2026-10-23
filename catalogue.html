@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue | AutoLoc</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index2.html">Auto<span>Loc</span></a>
+        <nav>
+            <a href="index2.html">Accueil</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="devis.html">Devis</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">NOTRE FLOTTE</p>
+                <h2>Catalogue des voitures</h2>
+                <p>Découvrez nos modèles et choisissez celui qui vous convient.</p>
+            </div>
+
+            <div class="table-container">
+                <table id="vehiclesTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Modèle</th>
+                            <th>Catégorie</th>
+                            <th>Carburant</th>
+                            <th>Prix par jour (DT)</th>
+                            <th>Réservation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fiat 500</td>
+                            <td>Mini</td>
+                            <td>Essence</td>
+                            <td>80</td>
+                            <td><a href="devis.html" class="btn">Choisir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Renault Clio</td>
+                            <td>Citadine</td>
+                            <td>Essence</td>
+                            <td>90</td>
+                            <td><a href="devis.html" class="btn">Choisir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Peugeot 208</td>
+                            <td>Citadine</td>
+                            <td>Essence</td>
+                            <td>100</td>
+                            <td><a href="devis.html" class="btn">Choisir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Volkswagen Golf</td>
+                            <td>Berline</td>
+                            <td>Diesel</td>
+                            <td>150</td>
+                            <td><a href="devis.html" class="btn">Choisir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hyundai Tucson</td>
+                            <td>SUV</td>
+                            <td>Diesel</td>
+                            <td>190</td>
+                            <td><a href="devis.html" class="btn">Choisir</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 AutoLoc — Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

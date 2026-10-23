@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de devis | AutoLoc</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+          rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index2.html">Auto<span>Loc</span></a>
+        <nav>
+            <a href="index2.html">Accueil</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="devis.html">Devis</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section quote-section">
+            <div class="section-heading">
+                <p class="eyebrow">VOTRE LOCATION</p>
+                <h2>Demander un devis</h2>
+                <p>Remplissez les informations pour estimer le coût de votre location.</p>
+            </div>
+
+            <form id="quoteForm" class="form-card">
+                <div class="form-group">
+                    <label for="customerName">Nom complet</label>
+                    <input type="text" id="customerName" name="customerName"
+                           placeholder="Votre nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerEmail">Adresse e-mail</label>
+                    <input type="email" id="customerEmail" name="customerEmail"
+                           placeholder="exemple@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="vehicle">Choisir une voiture</label>
+                    <select id="vehicle" name="vehicle" class="select2" required>
+                        <option value="">-- Sélectionner un modèle --</option>
+                        <option value="80">Fiat 500 — 80 DT/jour</option>
+                        <option value="90">Renault Clio — 90 DT/jour</option>
+                        <option value="100">Peugeot 208 — 100 DT/jour</option>
+                        <option value="150">Volkswagen Golf — 150 DT/jour</option>
+                        <option value="190">Hyundai Tucson — 190 DT/jour</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Date de début</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="days">Durée de location (jours)</label>
+                    <input type="number" id="days" name="days"
+                           min="1" max="365" value="1" required>
+                </div>
+
+                <button type="submit" class="btn">Calculer mon devis</button>
+                <p id="quoteResult" class="result" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 AutoLoc — Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
